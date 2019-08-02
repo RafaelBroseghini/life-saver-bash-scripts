@@ -1,0 +1,14 @@
+#!/bin/bash
+#Shebaaaaaaaaaang
+
+#Author: Rafael Broseghini
+
+date=$(date)
+
+filename="$1"
+dest="$HOME/${filename}notes.txt"
+
+read -p "Your note: " note
+
+echo "$date: " "$note" >> "$dest"
+echo "You saved  '$note' to $dest" 
